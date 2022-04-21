@@ -2,7 +2,7 @@
 
 namespace AnalaizerClass
 {
-    public class Class1
+    public class AnalaizerClass
     {
     }
 }
