@@ -33,10 +33,10 @@
             this.labelRes = new System.Windows.Forms.Label();
             this.textBoxRes = new System.Windows.Forms.TextBox();
             this.groupBoxEdit = new System.Windows.Forms.GroupBox();
-            this.buttonLBrack = new System.Windows.Forms.Button();
-            this.buttonRBrack = new System.Windows.Forms.Button();
-            this.buttonBackSp = new System.Windows.Forms.Button();
             this.buttonC = new System.Windows.Forms.Button();
+            this.buttonBackSp = new System.Windows.Forms.Button();
+            this.buttonRBrack = new System.Windows.Forms.Button();
+            this.buttonLBrack = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -109,25 +109,16 @@
             this.groupBoxEdit.TabStop = false;
             this.groupBoxEdit.Text = "Editing";
             // 
-            // buttonLBrack
+            // buttonC
             // 
-            this.buttonLBrack.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonLBrack.Location = new System.Drawing.Point(6, 26);
-            this.buttonLBrack.Name = "buttonLBrack";
-            this.buttonLBrack.Size = new System.Drawing.Size(62, 54);
-            this.buttonLBrack.TabIndex = 0;
-            this.buttonLBrack.Text = "(";
-            this.buttonLBrack.UseVisualStyleBackColor = true;
-            // 
-            // buttonRBrack
-            // 
-            this.buttonRBrack.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonRBrack.Location = new System.Drawing.Point(74, 26);
-            this.buttonRBrack.Name = "buttonRBrack";
-            this.buttonRBrack.Size = new System.Drawing.Size(63, 54);
-            this.buttonRBrack.TabIndex = 1;
-            this.buttonRBrack.Text = ")";
-            this.buttonRBrack.UseVisualStyleBackColor = true;
+            this.buttonC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonC.ForeColor = System.Drawing.Color.Red;
+            this.buttonC.Location = new System.Drawing.Point(330, 26);
+            this.buttonC.Name = "buttonC";
+            this.buttonC.Size = new System.Drawing.Size(84, 54);
+            this.buttonC.TabIndex = 3;
+            this.buttonC.Text = "C";
+            this.buttonC.UseVisualStyleBackColor = true;
             // 
             // buttonBackSp
             // 
@@ -140,16 +131,27 @@
             this.buttonBackSp.Text = "Backspace";
             this.buttonBackSp.UseVisualStyleBackColor = true;
             // 
-            // buttonC
+            // buttonRBrack
             // 
-            this.buttonC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonC.ForeColor = System.Drawing.Color.Red;
-            this.buttonC.Location = new System.Drawing.Point(330, 26);
-            this.buttonC.Name = "buttonC";
-            this.buttonC.Size = new System.Drawing.Size(84, 54);
-            this.buttonC.TabIndex = 3;
-            this.buttonC.Text = "C";
-            this.buttonC.UseVisualStyleBackColor = true;
+            this.buttonRBrack.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonRBrack.Location = new System.Drawing.Point(74, 26);
+            this.buttonRBrack.Name = "buttonRBrack";
+            this.buttonRBrack.Size = new System.Drawing.Size(63, 54);
+            this.buttonRBrack.TabIndex = 1;
+            this.buttonRBrack.Text = ")";
+            this.buttonRBrack.UseVisualStyleBackColor = true;
+            this.buttonRBrack.Click += new System.EventHandler(this.button_Click);
+            // 
+            // buttonLBrack
+            // 
+            this.buttonLBrack.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonLBrack.Location = new System.Drawing.Point(6, 26);
+            this.buttonLBrack.Name = "buttonLBrack";
+            this.buttonLBrack.Size = new System.Drawing.Size(62, 54);
+            this.buttonLBrack.TabIndex = 0;
+            this.buttonLBrack.Text = "(";
+            this.buttonLBrack.UseVisualStyleBackColor = true;
+            this.buttonLBrack.Click += new System.EventHandler(this.button_Click);
             // 
             // button1
             // 
@@ -160,6 +162,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button_Click);
             // 
             // button2
             // 
@@ -170,6 +173,7 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button_Click);
             // 
             // button3
             // 
@@ -180,6 +184,7 @@
             this.button3.TabIndex = 7;
             this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button_Click);
             // 
             // buttonDiv
             // 
@@ -191,6 +196,7 @@
             this.buttonDiv.TabIndex = 8;
             this.buttonDiv.Text = "/";
             this.buttonDiv.UseVisualStyleBackColor = true;
+            this.buttonDiv.Click += new System.EventHandler(this.button_Click);
             // 
             // buttonMR
             // 
@@ -212,6 +218,7 @@
             this.button4.TabIndex = 10;
             this.button4.Text = "4";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button_Click);
             // 
             // button5
             // 
@@ -222,6 +229,7 @@
             this.button5.TabIndex = 11;
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button_Click);
             // 
             // button6
             // 
@@ -232,6 +240,7 @@
             this.button6.TabIndex = 12;
             this.button6.Text = "6";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button_Click);
             // 
             // buttonMult
             // 
@@ -243,6 +252,7 @@
             this.buttonMult.TabIndex = 13;
             this.buttonMult.Text = "*";
             this.buttonMult.UseVisualStyleBackColor = true;
+            this.buttonMult.Click += new System.EventHandler(this.button_Click);
             // 
             // buttonMPLus
             // 
@@ -264,6 +274,7 @@
             this.button7.TabIndex = 15;
             this.button7.Text = "7";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button_Click);
             // 
             // button8
             // 
@@ -274,6 +285,7 @@
             this.button8.TabIndex = 16;
             this.button8.Text = "8";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button_Click);
             // 
             // button9
             // 
@@ -284,6 +296,7 @@
             this.button9.TabIndex = 17;
             this.button9.Text = "9";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button_Click);
             // 
             // buttonMinus
             // 
@@ -295,6 +308,7 @@
             this.buttonMinus.TabIndex = 18;
             this.buttonMinus.Text = "-";
             this.buttonMinus.UseVisualStyleBackColor = true;
+            this.buttonMinus.Click += new System.EventHandler(this.button_Click);
             // 
             // buttonMC
             // 
@@ -326,6 +340,7 @@
             this.button0.TabIndex = 21;
             this.button0.Text = "0";
             this.button0.UseVisualStyleBackColor = true;
+            this.button0.Click += new System.EventHandler(this.button_Click);
             // 
             // buttonMod
             // 
@@ -337,6 +352,7 @@
             this.buttonMod.TabIndex = 22;
             this.buttonMod.Text = "mod";
             this.buttonMod.UseVisualStyleBackColor = true;
+            this.buttonMod.Click += new System.EventHandler(this.button_Click);
             // 
             // buttonPlus
             // 
@@ -348,6 +364,7 @@
             this.buttonPlus.TabIndex = 23;
             this.buttonPlus.Text = "+";
             this.buttonPlus.UseVisualStyleBackColor = true;
+            this.buttonPlus.Click += new System.EventHandler(this.button_Click);
             // 
             // buttonRes
             // 
